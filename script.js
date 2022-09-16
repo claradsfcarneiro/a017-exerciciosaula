@@ -73,14 +73,14 @@ Crie uma função que receba um array de números e retorne um novo array apenas
 
 /*
 const numeros = [1, 2, 3, 4];
-const primeiroEUltimo = []; 
 
-function primeiroEUltimoNumeros (arrayOriginal, novoArray) {
-    novoArray.push(arrayOriginal[0], arrayOriginal[arrayOriginal.length-1]);
-    return novoArray;
+function retornaPrimeiroEUltimo(array) {
+    const primeiroEUltimo = []; 
+    primeiroEUltimo.push(array[0], array[array.length-1]);
+    return primeiroEUltimo;
 }
 
-console.log(primeiroEUltimoNumeros(numeros, primeiroEUltimo));
+console.log(retornaPrimeiroEUltimo(numeros));
 */
 
 /*Exercício 7
@@ -89,18 +89,18 @@ Crie uma função que receba um array de números como parametro e retorne um no
 
 /*
 const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-const numerosPares = [];
 
-function apenasNumerosPares (arrayOriginal, novoArray) {
-    for (let i of arrayOriginal) {
+function retornaNumerosPares (array) {
+    const numerosPares = [];
+    for (let i of array) {
         if (i % 2 === 0) {
             numerosPares.push(i);
         }
     }
-    return novoArray;
+    return numerosPares;
 }
 
-console.log(apenasNumerosPares(numeros, numerosPares));
+console.log(retornaNumerosPares(numeros));
 */
 
 /*Exercício 8
@@ -109,17 +109,17 @@ Receba um array de números
 Retorne um novo array com dois elementos: o último e o primeiro número do array recebido divididos por 2
 Chame a função com 2 arrays diferentes
 */
+
 /*
 const numerosPares = [2, 4, 6, 8, 10];
 const numerosImpares = [1, 3, 5, 7, 9];
-const paresUltEPrimMetade = [];
-const imparesUltEPrimMetade = [];
 
-function ultimoEPrimeiroDiv2 (arrayOriginal, novoArray) {
-    novoArray.push(arrayOriginal[arrayOriginal.length-1]/2, arrayOriginal[0]/2);
-    return novoArray;
+function ultimoEPrimeiroDiv2 (array) {
+    const UltimoEPrimeiroMetade = [];
+    UltimoEPrimeiroMetade.push(array[array.length-1]/2, array[0]/2);
+    return UltimoEPrimeiroMetade;
 }
 
-console.log(ultimoEPrimeiroDiv2(numerosPares, paresUltEPrimMetade));
-console.log(ultimoEPrimeiroDiv2(numerosImpares, imparesUltEPrimMetade));
+console.log(ultimoEPrimeiroDiv2(numerosPares));
+console.log(ultimoEPrimeiroDiv2(numerosImpares));
 */
